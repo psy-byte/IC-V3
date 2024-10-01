@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INGRID PARIS - Massages et Soins à Domicile pour Femmes à Paris</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+      </ul>
+    </nav>
+    <h1>INGRID PARIS</h1>
+    <p class="slogan">Si les femmes de Paris sont élégantes, c'est parce qu'elles sont détendues...</p>
+  </header>
+
+  <main class="container">
+    <section id="introduction" class="intro-section">
+      <h2>Bonjour Mesdames!</h2>
+      <p>
+        Avec des années d'expérience dans l'art du massage, je propose des soins dédiés à votre détente, directement chez vous. Chaque soin est conçu pour vous offrir un moment de reconnexion et de bien-être. Mon approche est personnalisée pour faire de chaque séance une véritable parenthèse de sérénité.
+      </p>
+    </section>
+
+    <section id="services" class="service-section">
+      <h2>Mes Services de Massage et Soins</h2>
+      <div class="service-grid">
+        <div class="service">
+          <h3>Massage Suédois</h3>
+          <p>Le massage suédois est une méthode idéale pour détendre les muscles et libérer le corps des tensions accumulées.
+            Que vous recherchiez une pression tonifiante, légère, ou plus profonde, ce massage s'adapte à vos besoins pour offrir une relaxation authentique.</p>
+        </div>
+        <div class="service">
+          <h3>Massage Lomi-Lomi</h3>
+          <p>Originaire des îles du Pacifique, le massage Lomi-Lomi combine des mouvements enveloppants et de doux étirements qui favorisent le lâcher-prise.
+            Ce massage aide au drainage naturel du corps et induit une relaxation profonde.</p>
+        </div>
+        <div class="service">
+          <h3>Massage Californien</h3>
+          <p>Le massage californien se caractérise par de longs mouvements lents et fluides, créant une expérience de relaxation qui agit à la fois sur le corps et sur l'esprit.
+            Ce massage est idéal pour quiconque souhaite vivre un moment d'apaisement total.</p>
+        </div>
+        <div class="service">
+          <h3>Soin Detox Japonais pour les Ongles</h3>
+          <p>Le soin Detox Japonais est une cure complète dédiée à la santé de vos ongles, nourrie par des actifs naturels.
+            Ce soin est conçu pour toutes celles qui souhaitent prendre soin de leurs ongles, notamment celles qui ont souffert des effets des vernis semi-permanents.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifs" class="pricing-section">
+      <h2>Tarifs</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Durée</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="category">
+            <td colspan="3"><strong>MES MASSAGES</strong></td>
+          </tr>
+          <tr>
+            <td>Massage Dos et Nuque</td>
+            <td>30mn</td>
+            <td>45€</td>
+          </tr>
+          <tr>
+            <td>Massage Californien</td>
+            <td>1h</td>
+            <td>90€</td>
+          </tr>
+          <tr>
+            <td>Massage Suédois</td>
+            <td>1h</td>
+            <td>90€</td>
+          </tr>
+          <tr class="category">
+            <td colspan="3"><strong>LE VISAGE</strong></td>
+          </tr>
+          <tr>
+            <td>Soin visage « belle peau »</td>
+            <td>1h</td>
+            <td>90€</td>
+          </tr>
+          <tr class="category">
+            <td colspan="3"><strong>LES MAINS</strong></td>
+          </tr>
+          <tr>
+            <td>Soin Detox Japonais</td>
+            <td>1h</td>
+            <td>50€</td>
+          </tr>
+          <tr class="category">
+            <td colspan="3"><strong>OPTIONS</strong></td>
+          </tr>
+          <tr>
+            <td>Forfait 3 séances</td>
+            <td>-</td>
+            <td>-10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+      <h2>Réservation</h2>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date de la Réservation</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Choisissez un Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Sélectionnez un service</option>
+            <option value="massage_californien">Massage Californien</option>
+            <option value="massage_suedois">Massage Suédois</option>
+            <option value="massage_lomi_lomi">Massage Lomi-Lomi</option>
+            <option value="soin_visage">Soin Visage</option>
+            <option value="soin_detox">Soin Detox Japonais</option>
+          </select>
+        </div>
+        <button type="submit">Réserver</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Ingrid Paris - Tous droits réservés. | <a href="#contact">Contact</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
