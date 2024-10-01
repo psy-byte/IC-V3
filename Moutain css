@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #ea9999;
+  --secondary-color: #150744;
+  --text-color: #4c1130;
+  --background-light: rgba(255, 255, 255, 0.1);
+  --background-lighter: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-image: url("https://raw.githubusercontent.com/psy-byte/IC-V3/main/background-mountain.jpg.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+  font-family: "Roboto", serif;
+}
+
+.container {
+  display: flex-end; 
+  justify-content: center;  
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.services-section h2 {
+  text-align: center; /* Centre le texte */
+  margin-bottom: 100px; /* Ajoute un espace sous le titre */
+
+}
+
+.intro-section h2 {
+  text-align: center;         /* Centrer le texte à l'intérieur de la section */
+}
+
+.service-section {
+  text-align: center;
+}
+.service h3 {
+  transition: transform 0.2s ease; /* Ajoute une transition pour l'animation */
+}
+
+.service:hover h2 {
+  transform: scale(1.1); /* Agrandit le texte à 120% lors du passage de la souris */
+}
+
+.service p {
+  transition: transform 0.1s ease; /* Ajoute une transition pour l'animation */
+}
+
+.service:hover p {
+  transform: scale(1.2); /* Agrandit le texte à 120% lors du passage de la souris */
+}
+
+header {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+
+nav {
+  display: flex-end;
+  justify-content: auto;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+section {
+  margin-top: 20px;
+  background-color: var(--background-light);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: var(--background-lighter);
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  
+
